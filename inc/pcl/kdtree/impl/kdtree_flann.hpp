@@ -39,6 +39,10 @@
 #ifndef PCL_KDTREE_KDTREE_IMPL_FLANN_H_
 #define PCL_KDTREE_KDTREE_IMPL_FLANN_H_
 
+#ifdef TP_WIN32_MSVC
+typedef unsigned long long pop_t;
+#endif
+
 #include <flann/flann.hpp>
 
 #include <pcl/kdtree/kdtree_flann.h>
